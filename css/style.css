@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+h1{
+	
+	text-align: center;
+	width: 100%;
+	display: block;
+	float: left;
+
+}
+
+
+/*arencia dos Botoes*/
+
+.botao{
+	padding: 5px 15px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	background: #ccc;
+}
+
+.btn-success{
+	background-color: green;
+	color: white;
+}
+
+.btn-editar{
+	background-color: orangered;
+	color: #FFF;
+}
+
+.btn-excluir{
+	background-color: red;
+	color: #FFF;
+}
+
+.tarefas{
+	
+}
+
+.tarefas ul{}
+
+.tarefas ul li{
+	margin: 15px 0px;
+	padding: 10px;
+	border-bottom: 1px solid;
+
+}
+
+}
+.tarefas ul li span{}
+
+
+.tarefas ul li a{
+	text-decoration: none;
+	float: right;
+
+}
