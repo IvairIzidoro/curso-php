@@ -1,7 +1,7 @@
 <?php
 
 /* codificado por ivair izidoro */
-$numeros = 10;
+$numeros = 15;
 $valor = 0;
 //vamos nos divertir com o laço de repetição for
 

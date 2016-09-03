@@ -54,7 +54,10 @@ h1{
 }
 
 }
-.tarefas ul li span{}
+.tarefas ul li span{
+
+	float: left;
+}
 
 
 .tarefas ul li a{
