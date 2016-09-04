@@ -1,6 +1,7 @@
 
 <?php require_once('./config/db.php') ?>
 <!DOCTYPE html>
+<!-- Documento criado por Ivair Izidoro -->
 <html lang="pt-br">
 
 <head>

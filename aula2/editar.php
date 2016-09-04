@@ -1,5 +1,5 @@
 <?php  
-
+//Documento criado por Ivair Izidoro
 require_once('./config/db.php');
 
 $id = $_GET['id'];
