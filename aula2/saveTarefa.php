@@ -12,6 +12,6 @@ $updated = date("Y-m-d H:i:s"); // atribui a data de atualização da tarefa
 //esta linha insere a tarefa no banco de dados
 $insert = mysql_query("INSERT INTO  tarefas (tarefa, created_at,  updated_at) VALUES ('$tarefa', '$created', '$updated') ") or die (mysql_error());
 
-echo "Inserido com sucesso";
+header("Location: index.php");
 
 ?>
