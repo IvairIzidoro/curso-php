@@ -7,11 +7,15 @@
 
 
 h1{
-	
-	text-align: center;
+	height: 100px;
+	font-family: Lobster,cursive, sans-serif;
+    font-size: 60px;
+    text-align: center;
 	width: 100%;
 	display: block;
 	float: left;
+    color: white;
+    text-shadow: 2px 2px 6px black;
 
 }
 
@@ -23,11 +27,18 @@ h1{
 	text-transform: uppercase;
 	border-radius: 2px;
 	background: #ccc;
+    margin: -2px 0px 0px 0px;
 }
 
 .btn-success{
-	background-color: green;
+    margin-left: 10px;
+    background-color: #3CB371;
 	color: white;
+}
+.btn-success:hover{
+    border-radius: 3px;
+    background-color: #00FF00;
+	text-shadow: 2px 2px 3px black;
 }
 
 .btn-editar{
@@ -36,24 +47,46 @@ h1{
 }
 
 .btn-excluir{
-	background-color: red;
+	border-radius: 3px;
+    background-color: #8B0000;
 	color: #FFF;
 }
 
+.btn-excluir:hover{
+    border-radius: 3px;
+    background-color: #FF0000;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+/*Fim das config dos botoes */
+
+/* Inicio das configs de Tarefas*/
+
 .tarefas{
+    
 	
 }
 
-.tarefas ul{}
+.tarefas ul{
+    margin-top: -2px;
+    font-family: 'Prosto One', Nunito, sans-serif, cursive;
+    font-size: 20px;
+}
 
 .tarefas ul li{
-	margin: 15px 0px;
-	padding: 10px;
-	border-bottom: 1px solid;
+	margin: 3px 0px;
+	padding: 10px ;
+	border-bottom: 1px solid #696969;
+    box-shadow: 1px 2px 0px #CCC;
+    border-radius: 3px;
 
 }
-
+.tarefas ul li:hover{
+    background-color: #DCDCDC/*#87CEEB/*#F5F5F5*/;
 }
+
+
 .tarefas ul li span{
 
 	float: left;
@@ -61,7 +94,37 @@ h1{
 
 
 .tarefas ul li a{
-	text-decoration: none;
+    text-decoration: none;
 	float: right;
 
+}
+
+/* configurações do formTarefa */
+
+.formTarefa{
+    height: 160px;
+    background: #00BFFF;
+    
+}
+
+.formTarefa label{
+    
+    margin-left: 10px;
+    font-family: Lobster, Nunito, sans-serif, cursive;
+    font-size: 28px;
+    
+}
+
+.formTarefa input[type='text'] {
+    font-family: Nunito, sans-serif, cursive;
+    font-size: 22px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.formTarefa input[type='submit']{
+    font-family: Nunito, sans-serif, cursive;
+    font-size: 22px;
+    border-radius: 3px;
+    width: 10%;
 }

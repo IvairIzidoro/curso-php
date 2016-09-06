@@ -5,7 +5,7 @@
 <html lang="pt-br">
 
 <head>
-
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Nunito|Prosto+One" rel="stylesheet">
 	<meta charset="utf-8">
 	<title>Lista de Tarefas</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -19,7 +19,7 @@
 	<div class="formulario">
 	
 		<form class="formTarefa" action="saveTarefa.php" method="post">
-			<label for="tarefa">Tarefa</label>
+			<label for="tarefa">Tarefa: </label>
 				<input type="text" name="tarefa" id="tarefa">
 				<input type="submit" name="enviar" value="Enviar">
 
