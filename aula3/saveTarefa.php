@@ -1,4 +1,11 @@
 <?php 
+/*
+* Verificar erros no php
+*/
+
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 
 /* *** Gerado por Ivair Izidoro *** */
 
@@ -13,23 +20,24 @@ try{
     $created = date("Y-m-d H:i:s"); //atribui a data de criação da tarefa
     $updated = date("Y-m-d H:i:s"); // atribui a data de atualização da tarefa
     
-    if (empty($tarefas)) throw new Exception("O campo tarefa esta vazio, insira algo!", '');
+    if (empty($tarefa)) throw new Exception("Ops, você nao digitou nada! Digite uma nova tarefa!", 1);
     
     //esta linha insere a tarefa no banco de dados
     $insert = mysql_query("INSERT INTO  tarefas (tarefa, created_at,  updated_at) VALUES ('$tarefa', '$created', '$updated') ") or die (mysql_error());
 
     
-    $resp->SUCCESS = true;
-    $resp->msg = "Tarefa inserida com sucesso";
+    $resp->success = true;
+    $resp->msg = "Tarefa inserida com sucesso!";
+    $resp->location = 'index.php';
     
 }catch (Exception $e){
-    $resp->SUCCESS = false;
+    $resp->success = false;
     $resp->msg = $e->getMessage();
     
 }
 
+echo json_encode($resp, JSON_HEX_QUOT);
 
 
-//header("Location: index.php");
 
 ?>

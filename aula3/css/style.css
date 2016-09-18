@@ -1,0 +1,143 @@
+*{
+   	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    
+    
+   background-image: url(../img/bg_city1.jpg);
+   background-size: auto;   
+}
+
+.panel{
+    background: #2E1C28;
+    box-shadow: 1px 1px 2px #CCC;
+    
+}
+
+
+h1{
+	height: 100px;
+	font-family: Lobster,cursive, sans-serif;
+    font-size: 60px;
+    text-align: center;
+	width: 100%;
+	display: block;
+	float: left;
+    color: white;
+    text-shadow: 2px 2px 6px #C379B0;
+
+}
+
+
+/*arencia dos Botoes*/
+
+.botao{
+	padding: 5px 15px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	background: #ccc;
+    margin: -2px 0px 0px 0px;
+}
+
+.btn-success{
+    margin-left: 10px;
+    background-color: #3CB371;
+	color: white;
+}
+.btn-success:hover{
+    border-radius: 3px;
+    background-color: #00FF00;
+	text-shadow: 2px 2px 3px black;
+}
+
+.btn-editar{
+	background-color: orangered;
+	color: #FFF;
+}
+
+.btn-excluir{
+	border-radius: 3px;
+    background-color: #8B0000;
+	color: #FFF;
+}
+
+.btn-excluir:hover{
+    border-radius: 3px;
+    background-color: #FF0000;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+/*Fim das config dos botoes */
+
+/* Inicio das configs de Tarefas*/
+
+.tarefas{
+    
+	
+}
+
+.tarefas ul{
+    margin-top: -2px;
+    font-family: 'Prosto One', Nunito, sans-serif, cursive;
+    font-size: 20px;
+}
+
+.tarefas ul li{
+	margin: 3px 0px;
+	padding: 10px ;
+	border-bottom: 1px solid #696969;
+    box-shadow: 1px 2px 0px #CCC;
+    border-radius: 3px;
+
+}
+.tarefas ul li:hover{
+    background-color: #DCDCDC/*#87CEEB/*#F5F5F5*/;
+}
+
+
+.tarefas ul li span{
+
+	float: left;
+}
+
+
+.tarefas ul li a{
+    text-decoration: none;
+	float: right;
+
+}
+
+/* configurações do formTarefa */
+
+.formTarefa{
+    height: 160px;
+   
+    
+}
+
+.formTarefa label{
+    margin-top: -12px;
+    color: white;
+    text-shadow: 1px 1px 3px #C379B0;
+    font-family:  Lobster, Nunito, sans-serif, cursive;
+    font-size: 32px;
+    
+}
+
+.formTarefa input[type='text'] {
+    font-family: Nunito, sans-serif, cursive;
+    font-size: 22px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.formTarefa input[type='submit']{
+    font-family: Nunito, sans-serif, cursive;
+    font-size: 22px;
+    border-radius: 3px;
+    width: 10%;
+}

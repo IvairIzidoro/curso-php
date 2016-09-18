@@ -1,7 +1,14 @@
-<?php include_once('include-header.php');?>
+<?php 
+
+include_once('include-header.php');
+
+/*  Arquivo gerado por Ivair Izidoro   */
+
+?>
 
 <div class="panel panel-default">
     <div class="panel-body">
+    
      <h1>Lista de tarefas: Ivair</h1>
         <div class="formulario">
             <form class="formTarefa form-horizontal" action="saveTarefa.php" method="post">
@@ -14,7 +21,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-6">
-                         <input type="submit" name="enviar" value="Enviar" class="btn btn-default addTarefa">        
+                         <input type="submit" name="enviar" value="Enviar" class="btn btn-default">        
                     </div>
                 </div>
 
@@ -42,7 +49,7 @@
                     <tr>
                        <td><?=$row[1]?></td>
                        <td><a href="editar.php?id=<?= $row[0] ?>"  class="btn btn-success">Editar</a></td>
-                       <td><a href="excluir.php?id=<?= $row[0] ?>" class="btn btn-warning">Remover</a></td>  
+                       <td><a href="excluir.php?id=<?= $row[0] ?>" class="btn btn-warning" >Remover</a></td>  
                     </tr>
                     <?php } ?>               
                </tbody>
