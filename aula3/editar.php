@@ -11,7 +11,7 @@ $result = mysql_fetch_array($query);
 
 <?php include_once('include-header.php');?>
 	<h1>Tarefa: <?= $result['tarefa']?></h1>
-        <form class="formTarefa" action="updateTarefa.php" method="post">
+        <form class="formEditarTarefa" action="updateTarefa.php" method="post">
 	        <div class="form-group">	
                 <label for="tarefa" class="col-sm3 control-label">Tarefa</label>
 	            <input type="hidden" name="id" value="<?= $result['id']?>" >
