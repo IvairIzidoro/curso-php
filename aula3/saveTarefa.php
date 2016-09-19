@@ -25,7 +25,6 @@ try{
     //esta linha insere a tarefa no banco de dados
     $insert = mysql_query("INSERT INTO  tarefas (tarefa, created_at,  updated_at) VALUES ('$tarefa', '$created', '$updated') ") or die (mysql_error());
 
-    
     $resp->success = true;
     $resp->msg = "Tarefa inserida com sucesso!";
     $resp->location = 'index.php';
