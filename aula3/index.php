@@ -14,13 +14,13 @@ include_once('include-header.php');
             <form class="formTarefa form-horizontal" action="saveTarefa.php" method="post">
 
                 <div class="form-group">
-                    <label for="tarefa" class="col-sm-3 control-label">Tarefa</label>
+                    <label for="tarefa" class="col-sm-3 control-label">Tarefa:</label>
                     <div class="col-sm-6">
                         <input type="text" name="tarefa" id="tarefa" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-sm-offset-3 col-sm-6">
+                    <div class="col-sm-offset-3 col-sm-12">
                          <input type="submit" name="enviar" value="Enviar" class="btn btn-default">        
                     </div>
                 </div>
@@ -32,15 +32,15 @@ include_once('include-header.php');
 
 <div class="panel panel-default">
    <div class="panel-heading">
-     Tarefas Recentes:
+     <h2> Tarefas Recentes: </h2>
    </div>
-   <div class="panel-body">
+   <div class="panel-body2">
        <table class="tabel table-striped">
            <thead>
-               <th>Tarefas:</th>
-               <th>&nbsp;</th>
-               <th>&nbsp;</th> 
-            </thead>
+                <th>Tarefa: </th> 
+                <th>&nbsp;</th> 
+                <th>&nbsp;</th> 
+            </thead> 
             <tbody>
             <?php 
                 $query = mysql_query("SELECT * FROM tarefas") or die (mysql_error());
