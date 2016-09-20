@@ -7,6 +7,8 @@
 **/
 
 
+/*
+
 $DB_usuario = 'root';
 $DB_senha = '';
 $DB_host = 'localhost';
@@ -39,12 +41,15 @@ while ($tarefa = $query->fetch_object()){
     }
 }
 
+*/
 
 
 /*
  * esta maneira abaixo de criar uma conexão com o MySQL embora ainda funcione está descontinuado
  *
- 
+ */
+
+
 // setando as configurações do banco de dados para variáveis
 $usuario = 'root';
 $senha = '';
@@ -57,6 +62,5 @@ $conexao = mysql_connect($host, $usuario, $senha) or die(mysql_error());
 //selecionando o banco de dados a ser trabalhado
 $selctDB = mysql_select_db($banco) or die (mysql_error());
 
-*/
 
  ?>
