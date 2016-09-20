@@ -1,3 +1,9 @@
+/*
+ * Arquivo Css gerado por Ivair Izidoro
+**/
+
+/* Configuraçoes das tags HTML */
+
 *{
    	margin: 0;
 	padding: 0;
@@ -5,18 +11,12 @@
 }
 
 body {
-    
-    
    background-image: url(../img/bg_city1.jpg);
    background-size: auto;   
 }
 
-.panel{
-    background: #2E1C28;
-    box-shadow: 1px 1px 2px #CCC;
-    
-}
 
+td{  width: 100%; }
 
 h1{
 	height: 100px;
@@ -28,88 +28,55 @@ h1{
 	float: left;
     color: white;
     text-shadow: 2px 2px 6px #C379B0;
+}
 
+h2{
+    font-family: 'Prosto One', Bangers, sans-serif, cursive;
+    margin-top:  10px;
+    height: 70px;
+    width: 100%;
+}
+.panel-heading{
+    height: 70px;
+}
+.panel{
+    background: #5E1C58;
+    box-shadow: 1px 1px 2px #CCC;
 }
 
 
-/*arencia dos Botoes*/
-
-.botao{
-	padding: 5px 15px;
-	text-transform: uppercase;
-	border-radius: 2px;
-	background: #ccc;
-    margin: -2px 0px 0px 0px;
-}
+/*  Aparencia dos Botoes  */
 
 .btn-success{
+    width: 90px;
+    height: 30px;
     margin-left: 10px;
-    background-color: #3CB371;
+    background-color: #006400;
 	color: white;
 }
 .btn-success:hover{
+    height: 30px;
     border-radius: 3px;
-    background-color: #00FF00;
-	text-shadow: 2px 2px 3px black;
+    background-color: #98FB98;
+	text-shadow: 2px 2px 2px black;
 }
 
-.btn-editar{
-	background-color: orangered;
-	color: #FFF;
-}
-
-.btn-excluir{
-	border-radius: 3px;
-    background-color: #8B0000;
-	color: #FFF;
-}
-
-.btn-excluir:hover{
-    border-radius: 3px;
+.btn-warning{
+    width: 90px;
+    height: 30px;
+    margin-left: 2px;
     background-color: #FF0000;
-    text-shadow: 2px 2px 3px black;
+	color: white;
 }
 
-
-/*Fim das config dos botoes */
-
-/* Inicio das configs de Tarefas*/
-
-.tarefas{
-    
-	
-}
-
-.tarefas ul{
-    margin-top: -2px;
-    font-family: 'Prosto One', Nunito, sans-serif, cursive;
-    font-size: 20px;
-}
-
-.tarefas ul li{
-	margin: 3px 0px;
-	padding: 10px ;
-	border-bottom: 1px solid #696969;
-    box-shadow: 1px 2px 0px #CCC;
+.btn-warning:hover{
+    height: 30px;
     border-radius: 3px;
-
-}
-.tarefas ul li:hover{
-    background-color: #DCDCDC/*#87CEEB/*#F5F5F5*/;
+    background-color: #FFA07A;
+	text-shadow: 2px 2px 2px black;
 }
 
-
-.tarefas ul li span{
-
-	float: left;
-}
-
-
-.tarefas ul li a{
-    text-decoration: none;
-	float: right;
-
-}
+.btn-default{ height: 41px; }
 
 /* configurações do formTarefa */
 
@@ -120,11 +87,11 @@ h1{
 }
 
 .formTarefa label{
-    margin-top: -12px;
+    margin-top: -24px;
     color: white;
-    text-shadow: 1px 1px 3px #C379B0;
+    text-shadow: 2px 1px 4px #C379B0;
     font-family:  Lobster, Nunito, sans-serif, cursive;
-    font-size: 32px;
+    font-size: 40px;
     
 }
 
@@ -139,5 +106,15 @@ h1{
     font-family: Nunito, sans-serif, cursive;
     font-size: 22px;
     border-radius: 3px;
-    width: 10%;
+    width: 15%;
+}
+
+/*
+ * Configuração do panel body2 
+*/
+
+.panel-body2{
+    font-family: Nunito, sans-serif, cursive;
+    font-size: 15px;
+    background: white;
 }
