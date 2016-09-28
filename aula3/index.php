@@ -15,9 +15,10 @@ include_once('include-header.php');
 
                 <div class="form-group">
                     <label for="tarefa" class="col-sm-3 control-label">Tarefa:</label>
-                    <div class="col-sm-6">
-                        <input type="text" name="tarefa" id="tarefa" class="form-control">
-                    </div>
+                       
+                        <div class="col-sm-6">
+                            <input type="text" name="tarefa" id="tarefa" class="form-control">
+                        </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-12">
