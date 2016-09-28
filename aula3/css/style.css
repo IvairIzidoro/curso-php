@@ -19,7 +19,7 @@ body {
 td{  width: 100%; }
 
 h1{
-	height: 100px;
+	height: auto;
 	font-family: Lobster,cursive, sans-serif;
     font-size: 60px;
     text-align: center;
@@ -35,11 +35,13 @@ h2{
     margin-top:  10px;
     height: 70px;
     width: 100%;
+    font-size: 22px;
 }
 .panel-heading{
     height: 70px;
 }
 .panel{
+    height: auto;
     background: #5E1C58;
     box-shadow: 1px 1px 2px #CCC;
 }
@@ -82,8 +84,6 @@ h2{
 
 .formTarefa{
     height: 160px;
-   
-    
 }
 
 .formTarefa label{
@@ -94,14 +94,29 @@ h2{
     font-size: 40px;
     
 }
-
+.formEditarTarefa label{
+    height: auto;
+    margin-top: -24px;
+    color: white;
+    text-shadow: 2px 1px 4px #C379B0;
+    font-family:  Lobster, Nunito, sans-serif, cursive;
+    font-size: 40px;
+    
+}
 .formTarefa input[type='text'] {
     font-family: Nunito, sans-serif, cursive;
     font-size: 22px;
     border-radius: 3px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
+.formEditarTarefa input[type='text'] {
+    
+    font-family: Nunito, sans-serif, cursive;
+    font-size: 22px;
+    border-radius: 3px;
+    margin-left: 0;
+}
 .formTarefa input[type='submit']{
     font-family: Nunito, sans-serif, cursive;
     font-size: 22px;
@@ -109,6 +124,12 @@ h2{
     width: 15%;
 }
 
+.formEditarTarefa input[type='submit']{
+    font-family: Nunito, sans-serif, cursive;
+    font-size: 22px;
+    border-radius: 3px;
+    width: 15%;
+}
 /*
  * Configuração do panel body2 
 */
